@@ -8,7 +8,7 @@
       "vmAdditionalArgs": [
         "--timeline_streams=VM,Isolate,GC"
       ],
-      "program": "main.dart"
+      "program": "my_app/main.dart"
     }
   ]
 }
