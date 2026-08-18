@@ -1,0 +1,22 @@
+# Root analysis_options.yaml
+include: package:lints/recommended.yaml # Or package:flutter_lints/flutter.yaml for Flutter
+
+analyzer:
+  # Exclude generated files across all packages in packages/*
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/build/**"
+
+  # Elevate specific issues to build errors or ignore non-critical notices
+  errors:
+    missing_required_param: error
+    missing_return: error
+    todo: ignore
+
+linter:
+  rules:
+    always_declare_return_types: true
+    prefer_single_quotes: true
+    avoid_relative_lib_imports: true
+    unawaited_futures: true
